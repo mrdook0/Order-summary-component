@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    font-family: "Red Hat Display", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Corrected to cover the full screen height */
+    background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 340px;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Correct box-shadow syntax */
+    border-radius: 10px;
+    overflow: hidden; /* Ensures the image fits inside the card properly */
+}
+
+.image {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h2 {
+    text-align: center; /* Simplified text alignment */
+    padding-top: 20px;
+    color: hsl(232, 51%, 30%);
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.5px;
+    padding-top: 2px;
+}
+
+.plan-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: 20px 30px 20px;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+
+.btn-change {
+    color: hsl(245, 75%, 52%);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.btn-payment, .btn-cancel {
+    width: 90%;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.btn-payment {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+}
+
+.btn-cancel {
+    background-color: transparent;
+    color: hsl(245, 75%, 52%);
+}
+
+.btn-cancel:hover {
+    text-decoration: underline;
+}
